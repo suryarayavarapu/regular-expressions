@@ -37,3 +37,15 @@ said *** in some_language."))
 
 p = re.compile('\W')
 print(p.findall("he said *** in some_language."))
+
+
+ #re.sub(pattern, repl, string, count=0, flags=0)
+ #pattern : which pattern need to search in variable string
+ #repl: it replaced word 
+ #string:variable string
+ #count: nuber of times such pattern must repeat
+msg="i am amstrong american"
+print(re.sub('am',"--",msg,count=3,flags=re.IGNORECASE))
+
+# Replace "AND" with "&", ignoring case
+print(re.sub(r'\sAND\s', ' & ', 'Baked Beans And Spam', flags=re.IGNORECASE))
